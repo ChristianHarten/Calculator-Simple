@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="de.hochschule_trier.taschenrechner.MainActivity">
+
+    <TextView
+        android:id="@+id/calcView"
+        style="@style/TextViewStyle"
+        android:layout_marginBottom="1dp"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/resultView"
+        style="@style/TextViewStyle"
+        android:visibility="invisible"
+        android:gravity="center|right"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4">
+
+        <Button
+            android:id="@+id/clearBtn"
+            style="@style/OtherButton"
+            android:layout_marginLeft="2dp"
+            android:onClick="clearChar"
+            android:text="@string/clear" />
+        <Button
+            style="@style/OtherButton"
+            android:onClick="changeDMToEuro"
+            android:text="@string/dmInEuro"/>
+        <Button
+            style="@style/OtherButton"
+            android:text="@string/plus_minus"/>
+        <Button
+            style="@style/OtherButton"
+            android:text="@string/multiply"
+            />
+        <Button
+            style="@style/NumberButton"
+            android:layout_marginLeft="2dp"
+            android:text="@string/number_7" />
+        <Button
+            style="@style/NumberButton"
+            android:text="@string/number_8" />
+        <Button
+            style="@style/NumberButton"
+            android:text="@string/number_9" />
+        <Button
+            style="@style/OtherButton"
+            android:text="@string/divide"/>
+        <Button
+            style="@style/NumberButton"
+            android:layout_marginLeft="2dp"
+            android:text="@string/number_4" />
+        <Button
+            style="@style/NumberButton"
+            android:text="@string/number_5" />
+        <Button
+            style="@style/NumberButton"
+            android:text="@string/number_6" />
+        <Button
+            style="@style/OtherButton"
+            android:text="@string/plus"/>
+        <Button
+            style="@style/NumberButton"
+            android:layout_marginLeft="2dp"
+            android:text="@string/number_1" />
+        <Button
+            style="@style/NumberButton"
+            android:text="@string/number_2" />
+        <Button
+            style="@style/NumberButton"
+            android:text="@string/number_3" />
+        <Button
+            style="@style/OtherButton"
+            android:text="@string/minus"/>
+
+        <Button
+            style="@style/NumberButton"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="2"
+            android:layout_marginLeft="2dp"
+            android:text="@string/number_0" />
+        <Button
+            style="@style/NumberButton"
+            android:text="@string/float_point" />
+        <Button
+            style="@style/OtherButton"
+            android:background="@drawable/result_button_background"
+            android:textColor="@color/numberButtonColor"
+            android:onClick="calculateExpr"
+            android:text="@string/result" />
+    </GridLayout>
+</LinearLayout>

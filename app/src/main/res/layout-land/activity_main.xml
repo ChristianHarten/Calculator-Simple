@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="de.hochschule_trier.taschenrechner.MainActivity">
+
+    <TextView
+        android:id="@+id/calcView"
+        style="@style/TextViewStyleLand"
+        android:layout_marginBottom="1dp"
+        android:gravity="top|end" />
+
+    <TextView
+        android:id="@+id/resultView"
+        style="@style/TextViewStyleLand"
+        android:layout_height="0dp"
+        android:gravity="center|end" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="6">
+
+        <Button
+            style="@style/ScienceButton"
+            android:layout_marginLeft="2dp"
+            android:text="@string/inverse" />
+
+        <Button
+            style="@style/ScienceButton"
+            android:text="@string/square" />
+
+        <Button
+            android:id="@+id/clearBtn"
+            style="@style/OtherButtonLand"
+            android:onClick="clearChar"
+            android:text="@string/clear" />
+
+        <Button
+            style="@style/OtherButtonLand"
+            android:onClick="changeDMToEuro"
+            android:text="@string/dmInEuro" />
+
+        <Button
+            style="@style/OtherButtonLand"
+            android:text="@string/plus_minus" />
+
+        <Button
+            style="@style/OtherButtonLand"
+            android:layout_marginRight="0dp"
+            android:text="@string/multiply" />
+
+        <Button
+            style="@style/ScienceButton"
+            android:layout_marginLeft="2dp"
+            android:text="@string/squareRoot" />
+
+        <Button
+            style="@style/ScienceButton"
+            android:text="@string/faculty" />
+
+        <Button
+            style="@style/NumberButtonLand"
+            android:text="@string/number_7" />
+
+        <Button
+            style="@style/NumberButtonLand"
+            android:text="@string/number_8" />
+
+        <Button
+            style="@style/NumberButtonLand"
+            android:text="@string/number_9" />
+
+        <Button
+            style="@style/OtherButtonLand"
+            android:layout_marginRight="0dp"
+            android:text="@string/divide" />
+
+        <Button
+            style="@style/ScienceButton"
+            android:layout_marginLeft="2dp"
+            android:text="@string/sinus" />
+
+        <Button
+            style="@style/ScienceButton"
+            android:text="@string/cosinus" />
+
+        <Button
+            style="@style/NumberButtonLand"
+            android:text="@string/number_4" />
+
+        <Button
+            style="@style/NumberButtonLand"
+            android:text="@string/number_5" />
+
+        <Button
+            style="@style/NumberButtonLand"
+            android:text="@string/number_6" />
+
+        <Button
+            style="@style/OtherButtonLand"
+            android:layout_marginRight="0dp"
+            android:text="@string/plus" />
+
+        <Button
+            style="@style/ScienceButton"
+            android:layout_marginLeft="2dp"
+            android:text="@string/tangens" />
+
+        <Button
+            style="@style/ScienceButton"
+            android:onClick="numberButtonClick"
+            android:text="@string/pi" />
+
+        <Button
+            style="@style/NumberButtonLand"
+            android:text="@string/number_1" />
+
+        <Button
+            style="@style/NumberButtonLand"
+            android:text="@string/number_2" />
+
+        <Button
+            style="@style/NumberButtonLand"
+            android:text="@string/number_3" />
+
+        <Button
+            style="@style/OtherButtonLand"
+            android:layout_marginRight="0dp"
+            android:text="@string/minus" />
+
+        <Button
+            style="@style/ScienceButton"
+            android:layout_marginLeft="2dp"
+            android:text="@string/logarithm" />
+
+        <Button
+            style="@style/ScienceButton"
+            android:onClick="numberButtonClick"
+            android:text="@string/exponent" />
+
+        <Button
+            style="@style/NumberButtonLand"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="2"
+            android:text="@string/number_0" />
+
+        <Button
+            style="@style/NumberButtonLand"
+            android:text="@string/float_point" />
+
+        <Button
+            style="@style/NumberButtonLand"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/result_button_background"
+            android:onClick="calculateExpr"
+            android:text="@string/result"
+            android:textColor="@color/numberButtonColor" />
+    </GridLayout>
+
+</LinearLayout>
